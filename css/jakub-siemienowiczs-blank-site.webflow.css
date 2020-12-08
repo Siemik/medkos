@@ -150,6 +150,7 @@ a {
   max-width: 1016px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 20px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
@@ -183,6 +184,9 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 7px 7px 0px 0px;
+  -webkit-filter: grayscale(24%);
+  filter: grayscale(24%);
 }
 
 .image-3 {
@@ -255,7 +259,7 @@ a {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 25px;
@@ -274,6 +278,7 @@ a {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   background-color: #ebebeb;
+  text-transform: uppercase;
 }
 
 .tab-cennik:hover {
@@ -383,6 +388,15 @@ a {
   padding-top: 0px;
   padding-bottom: 0px;
   font-style: italic;
+}
+
+.li-cennik.li-cennik-info {
+  font-style: italic;
+}
+
+.li-cennik.li-cennik-alert {
+  color: #ee2023;
+  font-weight: 700;
 }
 
 .body-2 {
@@ -670,13 +684,99 @@ a {
   text-decoration: none;
 }
 
+.text-block-5 {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
+  .header {
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .columns-2 {
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+
   .li-cennik {
     padding-left: 10px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .columns-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+  }
+
+  .columns-3 {
+    width: 80%;
+  }
+
+  .opinia {
+    padding-bottom: 10px;
+  }
+
+  .column-8 {
+    padding-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 479px) {
+  .column-2 {
+    display: none;
+  }
+
+  .header {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .heading-2 {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 28px;
+  }
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
+
+  .section-2 {
+    padding-bottom: 20px;
+  }
+
+  .section-2.opinie {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .columns-2 {
+    margin-right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .columns-3 {
+    margin-top: 20px;
+  }
+
+  .nav-link-2 {
+    border-bottom: 1px solid #b3b3b3;
+  }
+
   .li-cennik {
     margin-left: 10px;
   }
@@ -698,6 +798,12 @@ a {
     margin-top: auto;
   }
 
+  .image-10 {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
   .bg-bubble1 {
     z-index: -1;
   }
@@ -708,6 +814,36 @@ a {
 
   .link {
     font-size: 24px;
+  }
+
+  .brand {
+    max-width: 300px;
+  }
+
+  .brand.w--current {
+    max-width: 240px;
+    padding-top: 10px;
+  }
+
+  .icon {
+    font-size: 36px;
+  }
+
+  .menu-button {
+    background-color: #fff;
+  }
+
+  .menu-button.w--open {
+    background-color: #65bce7;
+  }
+
+  .column-9 {
+    display: none;
+  }
+
+  .column-10 {
+    padding-top: 10px;
+    text-align: center;
   }
 }
 
